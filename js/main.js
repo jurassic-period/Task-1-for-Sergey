@@ -38,3 +38,5 @@ const isPalindrome = (str) => {
 
     return false;
   };
+
+  btn.onclick = result;
