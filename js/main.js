@@ -1,10 +1,3 @@
-// $(document).ready(function() {
-//     btn.onclick = function() {
-//         alert( 'Спасибо' );
-//       }; 
-// }); 
-
-
 const result = () => {
     const strFromInput = document.getElementById("inputTxt").value;
     alert(isPalindrome(strFromInput));
