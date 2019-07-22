@@ -32,6 +32,9 @@ const isPalindrome = (str) => {
     } 
 
     else if (str[0] === str[str.length - 1]) {
+    if (str.length === 2) {
+      return true;
+    }
     const strWithoutOneAndLastChar = str.substring(1, str.length - 1); // move deep into the working condition
     return isPalindrome(strWithoutOneAndLastChar);
     } 
