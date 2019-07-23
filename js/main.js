@@ -1,10 +1,10 @@
 const result = () => {
   const str = document.getElementById("inputTxt").value;
-  if (str[0] === " " && str.length === 1) {
+  if (str.trim() === '') {
     return alert(null);
   } else {
-  alert(isPalindrome(str.trim())); // remove spaces
-}
+    alert(isPalindrome(str.trim())); // remove spaces
+  }
 };
 
 const isPalindrome = str => {
