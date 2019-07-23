@@ -27,8 +27,7 @@ const isPalindromeSecond = (str) => {
   let now = str;
   for (;;) {
     if (now[0] === now[str.length - 1]) {
-      now = str.substring(1, str.length - 1)
-      console.log(now);
+      now = str.substring(1, str.length - 1);
     } if (now.length <= 1) {
       return true;
     } return false;
