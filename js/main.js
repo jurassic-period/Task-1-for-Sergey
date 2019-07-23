@@ -1,9 +1,14 @@
+const answer = (str) => {
+  const out = document.getElementById('Output').innerHTML = str;
+  return out;
+};
+
 const result = () => {
   const str = document.getElementById("inputTxt").value.trim();
   if (str === '') {
-    return alert(null);
+    return answer('You have sent an empty string');
   } else {
-    alert(isPalindromeSecond(str)); // remove spaces
+    return answer(isPalindromeSecond(str)); // remove spaces
   }
 };
 
