@@ -1,9 +1,9 @@
 const result = () => {
-  const str = document.getElementById("inputTxt").value;
-  if (str.trim() === '') {
+  const str = document.getElementById("inputTxt").value.trim();
+  if (str === '') {
     return alert(null);
   } else {
-    alert(isPalindrome(str.trim())); // remove spaces
+    alert(isPalindrome(str)); // remove spaces
   }
 };
 
