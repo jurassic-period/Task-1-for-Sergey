@@ -12,7 +12,7 @@ const result = () => {
       return answer(isPalindrome(str)); // remove spaces
     }
   } catch {
-    document.getElementById('Output').innerHTML = 'Sorry an error has occurred';
+    answer('Sorry an error has occurred');
   }
 };
 
