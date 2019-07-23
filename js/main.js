@@ -4,8 +4,8 @@ const answer = (str) => {
 };
 
 const result = () => {
-  const str = document.getElementById("inputTxt").value.trim();
   try {
+    const str = document.getElementById("inputTxt").value.trim();
     if (str === '') {
       return answer('You have sent an empty string');
     } else {
