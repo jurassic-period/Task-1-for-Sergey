@@ -85,20 +85,37 @@ const result2 = () => {
 /*____________________________________Cycle-whille___________________________________ */
 
 
+// const sortArr = (arr) => {
+//   let unit;
+//   let i = arr.length;
+//   while (i > 0) {
+//     i -= 1;
+//     let b = 0;
+//     while (b < i) {
+//       b += 1;
+//       if (arr[b] > arr[b + 1]) {
+//         unit = arr[b];
+//         arr[b] = arr[b + 1];
+//         arr[b + 1] = unit;
+//       }
+//     }
+//   } 
+//   return arr;
+// };
+
+/*____________________________________Cycle-forEach___________________________________ */
+
+
 const sortArr = (arr) => {
   let unit;
-  let i = arr.length;
-  while (i > 0) {
-    i -= 1;
-    let b = 0;
-    while (b < i) {
-      b += 1;
+  for (let i = arr.length - 1; i > 0; i--) {
+    arr.forEach(function(item, b) {
       if (arr[b] > arr[b + 1]) {
         unit = arr[b];
         arr[b] = arr[b + 1];
         arr[b + 1] = unit;
       }
-    }
+    });
   } 
   return arr;
 };
