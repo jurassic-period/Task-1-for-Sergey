@@ -54,7 +54,8 @@ const answer2 = (str) => {
 
 const result2 = () => {
   try {
-    const arr = document.getElementById("inputArray").value.trim().split('');
+    const arr = document.getElementById("inputArray").value.trim().split();
+    console.log(arr);
     if (arr === '') {
       return answer2('You have sent an empty string');
     } else {
